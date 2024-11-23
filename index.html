@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Encabezado -->
+    <header class="bg-black text-white text-center py-4">
+        <h1 class="text-2xl font-bold">Encabezado</h1>
+    </header>
+
+    <main class="p-4">
+        <!-- Contenedor principal -->
+        <div class="grid gap-4 lg:grid-cols-3 lg:items-start">
+            <!-- Bloques de texto -->
+            <div class="lg:col-span-1 space-y-4">
+                <div class="bg-purple-400 p-4 text-white text-center rounded shadow">
+                    <p>Bloque de texto 1</p>
+                </div>
+                <div class="bg-purple-400 p-4 text-white text-center rounded shadow">
+                    <p>Bloque de texto 2</p>
+                </div>
+                <div class="bg-purple-400 p-4 text-white text-center rounded shadow">
+                    <p>Bloque de texto 3</p>
+                </div>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Imagen 1 (siempre visible) -->
+                <img src="images/imagen1.jpeg" alt="Imagen 1" class="rounded shadow">
+
+                <!-- Imagen 2 (posición cambia en móvil) -->
+                <img src="images/imagen2.jpeg" alt="Imagen 2" class="rounded shadow md:order-last lg:order-none">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>© 2024 Diseño Responsivo</p>
+    </footer>
+</body>
+
+</html>
